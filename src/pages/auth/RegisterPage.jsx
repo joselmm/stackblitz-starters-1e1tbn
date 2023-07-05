@@ -103,6 +103,15 @@ const RegisterPage = () => {
                 >
                   {isSubmitting ? 'Registrandote...' : 'Registrese'}
                 </button>
+                <div>
+                  <p>Ya tienes cuenta? <a
+                    style={{ marginTop: '10px' }}
+                    onClick={(e) => {e.preventDefault();navigate('/login')}}
+                    href="#"
+                  >
+                    Ingresa
+                  </a></p>
+                </div>
               </Form>
             </div>
           );

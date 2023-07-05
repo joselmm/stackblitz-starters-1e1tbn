@@ -98,13 +98,21 @@ const LoginPage = ({ login }) => {
                 >
                   {isSubmitting ? 'Ingresando...' : 'Ingresar'}
                 </button>
+
                 <div>
-                  <button
-                    style={{ marginTop: '10px' }}
-                    onClick={() => navigate('/register')}
-                  >
-                    Registrate
-                  </button>
+                  <p>
+                    No tienes cuenta?{' '}
+                    <a
+                      style={{ marginTop: '10px' }}
+                      onClick={(e) => {
+                        e.preventDefault();
+                        navigate('/register');
+                      }}
+                      href="#"
+                    >
+                      Registrate
+                    </a>
+                  </p>
                 </div>
               </Form>
             </div>
